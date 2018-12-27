@@ -1,10 +1,9 @@
 package com.spring.SpringProject;
 
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.core.io.FileSystemResource;
+
+import com.spring.constructorInjection.Triangle2;
 
 public class SpringDemo {
 
@@ -12,8 +11,11 @@ public class SpringDemo {
 		
 		//BeanFactory factory = new XmlBeanFactory(new FileSystemResource("spring.xml"));
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+		
 		Triangle triangle = (Triangle) context.getBean("triangle");
 		triangle.draw();
+		Triangle2 triangle2 = (Triangle2) context.getBean("triangle2");
+		triangle2.draw();
 	}
 
 }

@@ -11,5 +11,8 @@
    <bean id="triangle" class="com.spring.SpringProject.Triangle">
   <property name="type" value="Equilateral"/>
    </bean>
+   <bean id="triangle2" class="com.spring.constructorInjection.Triangle2">
+  <constructor-arg value="Isosceles"/>
+   </bean>
    
    </beans>
