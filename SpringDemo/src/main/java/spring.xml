@@ -40,4 +40,18 @@
    
    <alias name="triangle3" alias="triangle alias"/>
    
+   
+   <bean id="triangle4" class="com.spring.InitializingCollections.Triangle4">
+   		<property name="type" value="Equilateral"/>
+   		<property name="points">
+   		<list>
+   			<ref bean="zeroPoint"/>
+   			<ref bean="point2"/>
+   			<ref bean="point3"/>
+   		</list>
+   		
+   		</property>
+   
+   </bean>
+   
    </beans>
