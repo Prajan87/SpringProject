@@ -3,6 +3,7 @@ package com.spring.SpringProject;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.spring.ObjectInjection.Triangle3;
 import com.spring.constructorInjection.Triangle2;
 
 public class SpringDemo {
@@ -16,6 +17,9 @@ public class SpringDemo {
 		triangle.draw();
 		Triangle2 triangle2 = (Triangle2) context.getBean("triangle2");
 		triangle2.draw();
+		
+		Triangle3 triangle3 = (Triangle3) context.getBean("triangle3");
+		triangle3.draw();
 	}
 
 }
