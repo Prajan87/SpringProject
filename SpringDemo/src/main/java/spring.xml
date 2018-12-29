@@ -38,5 +38,6 @@
    		<property name="y" value="-20"/>   
    </bean>
    
+   <alias name="triangle3" alias="triangle alias"/>
    
    </beans>

@@ -18,7 +18,7 @@ public class SpringDemo {
 		Triangle2 triangle2 = (Triangle2) context.getBean("triangle2");
 		triangle2.draw();
 		
-		Triangle3 triangle3 = (Triangle3) context.getBean("triangle3");
+		Triangle3 triangle3 = (Triangle3) context.getBean("triangle alias");
 		triangle3.draw();
 	}
 
